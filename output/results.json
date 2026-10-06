@@ -1,0 +1,119 @@
+{
+  "evaluation_version": "1.0.0",
+  "timestamp": "2026-10-06T15:37:44.909535Z",
+  "dataset_hash": "f26215cd3d30",
+  "phase_1_security_foundations": {
+    "rbac": "PASS",
+    "pii_masking": "PASS",
+    "governance": "PASS"
+  },
+  "phase_2_data_quality": {
+    "total_items": 30,
+    "topics_count": 8,
+    "imbalance_ratio": 1.33,
+    "status": "PASS"
+  },
+  "phase_3_ab_test": {
+    "v1_metrics": {
+      "bleu": 0.3855,
+      "rouge1": 0.5919,
+      "rouge2": 0.5388,
+      "rougeL": 0.5807,
+      "context_relevance": 0.4525,
+      "groundedness": 0.2067,
+      "answer_relevance": 0.3905,
+      "schema_score_mean": 1.0,
+      "decision_accuracy": 0.9333,
+      "latency": 0.0,
+      "p99_latency": 0.0,
+      "pass_rate": 0.0,
+      "composite": 0.5373
+    },
+    "v2_metrics": {
+      "bleu": 0.9068,
+      "rouge1": 0.9488,
+      "rouge2": 0.9091,
+      "rougeL": 0.9326,
+      "context_relevance": 0.4719,
+      "groundedness": 0.98,
+      "answer_relevance": 0.399,
+      "schema_score_mean": 1.0,
+      "decision_accuracy": 1.0,
+      "latency": 0.0,
+      "p99_latency": 0.0,
+      "pass_rate": 1.0,
+      "composite": 0.8455
+    },
+    "winner": "v2",
+    "metric_evaluations": {
+      "bleu": "PASS",
+      "rouge1": "PASS",
+      "rouge2": "PASS",
+      "rougeL": "PASS",
+      "context_relevance": "PASS",
+      "groundedness": "PASS",
+      "answer_relevance": "WARN",
+      "schema_score_mean": "PASS"
+    },
+    "consistency_rate": 1.0
+  },
+  "phase_4_security": {
+    "v1": {
+      "risk_score": 10.0,
+      "pass_rate": 0.0,
+      "pii_leaks": 2,
+      "policy_bypasses": 40,
+      "total": 40
+    },
+    "v2": {
+      "risk_score": 0.0,
+      "pass_rate": 100.0,
+      "pii_leaks": 0,
+      "policy_bypasses": 0,
+      "total": 40
+    }
+  },
+  "phase_5_quality_gate": {
+    "checks": {
+      "Evaluation pass rate": [
+        true,
+        "100.0%"
+      ],
+      "Attack pass rate": [
+        true,
+        "100.0%"
+      ],
+      "Decision accuracy": [
+        true,
+        "100.0%"
+      ],
+      "Groundedness": [
+        true,
+        "0.98"
+      ],
+      "Schema score": [
+        true,
+        "1.00"
+      ],
+      "P99 latency": [
+        true,
+        "0.00s"
+      ],
+      "PII leakage": [
+        true,
+        "0"
+      ]
+    },
+    "quality_gate_status": "PASS",
+    "release_recommendation": "GO"
+  },
+  "phase_6_monitoring": {
+    "quality_pass_rate": 100.0,
+    "error_rate": 0.0,
+    "refusal_rate": 0.0,
+    "p99_latency": 0.0,
+    "metric_drift_pct": 57.4,
+    "status": "PASS"
+  },
+  "failed_test_cases": []
+}

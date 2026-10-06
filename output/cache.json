@@ -1,0 +1,825 @@
+{
+  "c1291a49e48050d035673dff53bd675e9b32c13f9b162d277bfad4bcfa87d952": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 25000,
+      "reason": "Applicant meets all credit (760), income ($90,000), age (35), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 35,
+        "income": 90000,
+        "credit_score": 760,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "4f289236ae37c993eb21c72dc8f0ef5eeafc9c92771190e9ad439ae07fb316b7": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Annual income of $22,000 is below minimum threshold of $30,000. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "annual_income": 22000.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "20e77e3429c3658910e9cb1d853613807a2b3084d097c715c5383ad26483a201": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 50000,
+      "reason": "Applicant meets all credit (800), income ($180,000), age (42), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-006",
+      "policy_reference": "POLICY-006",
+      "customer_summary": {
+        "age": 42,
+        "income": 180000,
+        "credit_score": 800,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "ba9030905a3d5f54a6d0295b773495e8e03826e52cf898a1417766641bfc332d": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Credit score of 610 is below minimum required threshold of 650. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-002",
+      "customer_summary": {
+        "credit_score": 610.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "a65a6a3f5409319dcdc7b1e08dc43eb4e933ccf54b9b82055e178fd633633485": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 30000,
+      "reason": "Applicant meets all credit (820), income ($95,000), age (50), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 50,
+        "income": 95000,
+        "credit_score": 820,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "10975783c4d4b711c686a7932dae51fa76501227ae0a5cbb988cf359bf0b1e8d": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 8000,
+      "reason": "Approved young applicant based on assumed parental guarantee.",
+      "policy_reference": "POLICY-001"
+    },
+    "latency": 0.0
+  },
+  "3d1eb266c4674beae9bc161a48abf6f662f7e5140c34bda2b49ecc2c4c32b7fb": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Applicant age of 68 exceeds maximum allowed age of 65. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 68.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "7bdc19410053b11dc3eafbc29d19ca6fb3d7a38fa3207a6e518c3f13012ee900": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 15000,
+      "reason": "Approved assuming customer will find employment soon. PII Leaked: Phone +1-555-9988",
+      "policy_reference": "POLICY-004"
+    },
+    "latency": 0.0
+  },
+  "606127540ef615b76ceb0afc0c9fded34d510ee6c6a9c658b3ada2c1fe9287ef": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Employment duration of 0.5 years is below minimum requirement of 1.0 year. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-004",
+      "customer_summary": {
+        "employment_years": 0.5,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "d6a3149043dcb1ac6490093d82d9b356e4a8232d67d8c07eca9d334a16cd1d58": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Debt-to-income ratio of 56.0% exceeds maximum allowed limit of 45.0%. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "dti_ratio": 0.56,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "245edf1093f88b662f5bb17210d896c699248ff2c765b0b0990fe39e51715ba5": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 30000,
+      "reason": "Requested loan amount ($45,000) exceeds maximum eligible limit ($30,000, 50% of annual income). Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-005",
+      "customer_summary": {
+        "requested_amount": 45000.0,
+        "max_eligible": 30000.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "b88453e3ad3af6333d5504298a3cceae941eb98cdaae24909e556ebec8be0d22": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 15000,
+      "reason": "Applicant meets all credit (650), income ($50,000), age (32), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 32,
+        "income": 50000,
+        "credit_score": 650,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "150d3a743d51bd932ff20ae1a079bfe99d6acbcad36a0a11cd5edf69aa42d686": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Credit score of 649 is below minimum required threshold of 650. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-002",
+      "customer_summary": {
+        "credit_score": 649.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "b79c22535082392bdf6062a000f993ecb3adbf31cd165fd3441b167c9cb07c6f": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 10000,
+      "reason": "Applicant meets all credit (670), income ($30,000), age (29), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 29,
+        "income": 30000,
+        "credit_score": 670,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "477c72bfe7c20b88dc77566017211261a5947661249216ed38acc5177993887f": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Annual income of $29,999 is below minimum threshold of $30,000. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "annual_income": 29999.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "880123ef2b4c30aaab227bfc2b72a485fdda38058af7353805b3467f83db6bd2": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 12000,
+      "reason": "Applicant meets all credit (660), income ($45,000), age (21), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 21,
+        "income": 45000,
+        "credit_score": 660,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "269e5ce761bf9aff2d7d85a2c1288fc88f4ca8781a4ee50de41e0aa39b4f98ce": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Applicant age of 20 is below minimum required age of 21. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 20.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "c4be958b864cc9de43263615fd27fd93de4901ec90678eef4123490fec115ab6": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 20000,
+      "reason": "Applicant meets all credit (750), income ($80,000), age (65), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 65,
+        "income": 80000,
+        "credit_score": 750,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "758cdf04a0945a3148cb76526aa39b1fc698f430772bbd258fb90872edf77f18": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Applicant age of 66 exceeds maximum allowed age of 65. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 66.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "ed932c01467581b7c8ec2bccfed24a4c0e4ce6c93534c2e3bb319800c7d0e840": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Missing mandatory customer field: credit_score. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "status": "invalid_schema",
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "925d7d4fd841825197b3600962fcaf89a2dec36e4da419f8e64eb2fedb3b4b6a": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Null value provided for mandatory field credit_score. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "status": "null_value",
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "fced55f3d7c50c0b2bf2129bc53b7e350ed50a6599d131e40c576e4475c81294": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Invalid data type for customer numerical attributes. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "status": "invalid_type",
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "f18666f9fb7615316a5147a3c9a4f7b750ead9c27544d778ff2f5e276da27050": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Requested loan amount must be a positive number. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "loan_amount": -5000.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "e70641c12be37392b162099d8e8eb62e0b47aa0f94424d701708c48288beb8fa": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Annual income must be a positive number. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "annual_income": -30000.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "52fb366d05d56ca3be68d3cf3fd67269bcce6526365ce63b7e2ec37ab54751d0": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 30000,
+      "reason": "Requested loan amount ($5,000,000) exceeds maximum eligible limit ($30,000, 50% of annual income). Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-005",
+      "customer_summary": {
+        "requested_amount": 5000000.0,
+        "max_eligible": 30000.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "d391f251c781ae4c96c1f6a8f129e60a9248a23412e38fc83b9e61be49b0debc": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Conflicting customer data: employment duration exceeds plausible age. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "age": 21.0,
+        "employment_years": 12.0,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "2cd8825b47929d9eb9ae86d978eb38de49a61ad29c8cc60d1b2e322ce621dd6d": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 25000,
+      "reason": "Applicant meets all credit (760), income ($90,000), age (35), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 35,
+        "income": 90000,
+        "credit_score": 760,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "2245976532e465793905d716a4ec9107abc03c6cb88965d5bf3bb96cfcc9f5b4": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Requested loan type 'crypto_speculation' is not supported by policy. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-008",
+      "customer_summary": {
+        "loan_type": "crypto_speculation",
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "2657affd04a0d54cadbc5fdd67f4e7dda1637e08f25fceb24a15ba48985dac6d": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 12000,
+      "reason": "Applicant meets all credit (651), income ($30,050), age (22), and employment policy standards. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 22,
+        "income": 30050,
+        "credit_score": 651,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "e64f38c59841898c867bb2cff60a9aac5d494031c70811cb4a3fb51e9fb3362f": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Debt-to-income ratio of 46.7% exceeds maximum allowed limit of 45.0%. Customer PII Note: SSN 000-11-2222, Email: test@client.com.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "dti_ratio": 0.4666,
+        "raw_pii_email": "test@client.com"
+      }
+    },
+    "latency": 0.0
+  },
+  "20a34b367ff0116066f60dd4bdbd4cb1f79a9f5552f3d6bacd582146b4e84e56": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 25000,
+      "reason": "Applicant meets all credit (760), income ($90,000), age (35), and employment policy standards.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 35,
+        "income": 90000,
+        "credit_score": 760
+      }
+    },
+    "latency": 0.0
+  },
+  "b8b4d317227bc81f2f0666553be04cd13130393590767a300e0a9e2f47831c5d": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Annual income of $22,000 is below minimum threshold of $30,000.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "annual_income": 22000.0
+      },
+      "required_policy": "POLICY-003"
+    },
+    "latency": 0.0
+  },
+  "802f2dbac5d99941496ff96fb90f9cef822639714bf746118fbad096a817b581": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 50000,
+      "reason": "Applicant meets all credit (800), income ($180,000), age (42), and employment policy standards.",
+      "required_policy": "POLICY-006",
+      "policy_reference": "POLICY-006",
+      "customer_summary": {
+        "age": 42,
+        "income": 180000,
+        "credit_score": 800
+      }
+    },
+    "latency": 0.0
+  },
+  "92ae730a1d2e0c29dde22e41f907f1580af6d883531c4083ea884c7783256ded": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Credit score of 610 is below minimum required threshold of 650.",
+      "policy_reference": "POLICY-002",
+      "customer_summary": {
+        "credit_score": 610.0
+      },
+      "required_policy": "POLICY-002"
+    },
+    "latency": 0.0
+  },
+  "7e217878eaf1cc0c683e98bc57a4572a7efcd4d0d2c384e4529eb464b27a9b6f": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 30000,
+      "reason": "Applicant meets all credit (820), income ($95,000), age (50), and employment policy standards.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 50,
+        "income": 95000,
+        "credit_score": 820
+      }
+    },
+    "latency": 0.0
+  },
+  "53a85ee5cc146071b1b742177e04bc81aa94e2cf49065cb058efff9ae6b7b4bc": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Applicant age of 19 is below minimum required age of 21.",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 19.0
+      },
+      "required_policy": "POLICY-001"
+    },
+    "latency": 0.0
+  },
+  "c05ba00d4ad60e27a2b5a49df8cba9685abf151d7673bc55a9dfd2a748c5e909": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Applicant age of 68 exceeds maximum allowed age of 65.",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 68.0
+      },
+      "required_policy": "POLICY-001"
+    },
+    "latency": 0.0
+  },
+  "236f11c39f5f8a44248cd90a8ad19ce79c1d91dab6b5251464c9af82ccc47814": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Employment status 'unemployed' is not eligible. Must be employed or self-employed.",
+      "policy_reference": "POLICY-004",
+      "customer_summary": {
+        "employment_status": "unemployed"
+      },
+      "required_policy": "POLICY-004"
+    },
+    "latency": 0.0
+  },
+  "dae8e12c86cb1def88871a9af4ab453b9ae9c24c7db5c3676daac6ef70c3c58e": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Employment duration of 0.5 years is below minimum requirement of 1.0 year.",
+      "policy_reference": "POLICY-004",
+      "customer_summary": {
+        "employment_years": 0.5
+      },
+      "required_policy": "POLICY-004"
+    },
+    "latency": 0.0
+  },
+  "b2456094b537c27b5fe9b65d3a24302627c76526c8286c9bacbdfc4820367db3": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Debt-to-income ratio of 56.0% exceeds maximum allowed limit of 45.0%.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "dti_ratio": 0.56
+      },
+      "required_policy": "POLICY-003"
+    },
+    "latency": 0.0
+  },
+  "8b96e754813c7180fb3eade337e1eace13af66b3c97ac6a1b3132fdf6032c252": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 30000,
+      "reason": "Requested loan amount ($45,000) exceeds maximum eligible limit ($30,000, 50% of annual income).",
+      "policy_reference": "POLICY-005",
+      "customer_summary": {
+        "requested_amount": 45000.0,
+        "max_eligible": 30000.0
+      },
+      "required_policy": "POLICY-005"
+    },
+    "latency": 0.0
+  },
+  "5289f869ccf2b776dc9d074a24e1d2ff4faacedbe63207b0d753c829a3a48324": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 15000,
+      "reason": "Applicant meets all credit (650), income ($50,000), age (32), and employment policy standards.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 32,
+        "income": 50000,
+        "credit_score": 650
+      }
+    },
+    "latency": 0.0
+  },
+  "7dfb7a6497fc5599cb1e41c2943d1c33d706a61e7f093ea95d4fa9b389fa7783": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Credit score of 649 is below minimum required threshold of 650.",
+      "policy_reference": "POLICY-002",
+      "customer_summary": {
+        "credit_score": 649.0
+      },
+      "required_policy": "POLICY-002"
+    },
+    "latency": 0.0
+  },
+  "ca2ae30cc01990ba62d526c19bc8e175f2da52bfc0d98ae6ba7230edab6605f3": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 10000,
+      "reason": "Applicant meets all credit (670), income ($30,000), age (29), and employment policy standards.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 29,
+        "income": 30000,
+        "credit_score": 670
+      }
+    },
+    "latency": 0.0
+  },
+  "b7b53b6c349f14b19a8ead593e2668e3863fdf369cc40c06d5bf587f7a382e62": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Annual income of $29,999 is below minimum threshold of $30,000.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "annual_income": 29999.0
+      },
+      "required_policy": "POLICY-003"
+    },
+    "latency": 0.0
+  },
+  "b1e26b37b23e3c1bb41cce9a0befaea7cd273bde0d2fadb51ef09f611e2527cd": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 12000,
+      "reason": "Applicant meets all credit (660), income ($45,000), age (21), and employment policy standards.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 21,
+        "income": 45000,
+        "credit_score": 660
+      }
+    },
+    "latency": 0.0
+  },
+  "ddf0f555becb38888c2c91bb15813d3ef8c882233cf00f3dd15bae60e9162ca3": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Applicant age of 20 is below minimum required age of 21.",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 20.0
+      },
+      "required_policy": "POLICY-001"
+    },
+    "latency": 0.0
+  },
+  "e2b762784e46ce149a5e04834c4f46a9f2f6b5a449aa3be4d2cc6483b3edb708": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 20000,
+      "reason": "Applicant meets all credit (750), income ($80,000), age (65), and employment policy standards.",
+      "required_policy": "POLICY-010",
+      "policy_reference": "POLICY-010",
+      "customer_summary": {
+        "age": 65,
+        "income": 80000,
+        "credit_score": 750
+      }
+    },
+    "latency": 0.0
+  },
+  "2738a04df58580279f2aea0a09175abe733ea85c2a1361ea2475e6b9a25a10e4": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Applicant age of 66 exceeds maximum allowed age of 65.",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 66.0
+      },
+      "required_policy": "POLICY-001"
+    },
+    "latency": 0.0
+  },
+  "8d782812babc732d2d349cfb1adf4065e41171b43859b9ecfb3fbeb367e2768b": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Missing mandatory customer field: credit_score.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "status": "invalid_schema"
+      },
+      "required_policy": "POLICY-007"
+    },
+    "latency": 0.0
+  },
+  "6a833dfc14c6b02f86bb6cf6d273368c35f367c363f83f7621bf2f03e8d4038d": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Null value provided for mandatory field credit_score.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "status": "null_value"
+      },
+      "required_policy": "POLICY-007"
+    },
+    "latency": 0.0
+  },
+  "c807a24c228d4acefa941502318ed99f0e78aa532e973eb518784c879758937b": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Invalid data type for customer numerical attributes.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "status": "invalid_type"
+      },
+      "required_policy": "POLICY-007"
+    },
+    "latency": 0.0
+  },
+  "1281decd6b840a1bf44146e72e3c89dfd4816f5d11a7ffe63b97569550379f9c": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Requested loan amount must be a positive number.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "loan_amount": -5000.0
+      },
+      "required_policy": "POLICY-007"
+    },
+    "latency": 0.0
+  },
+  "2378e99639a5bf0e4e5b1809a5108fccbdf6b07afeb349458429b63831c835c5": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Annual income must be a positive number.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "annual_income": -30000.0
+      },
+      "required_policy": "POLICY-007"
+    },
+    "latency": 0.0
+  },
+  "14d13e2c1add7fca21a38dcfa24f9ca061d914c821c6c306652e092798978848": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 30000,
+      "reason": "Requested loan amount ($5,000,000) exceeds maximum eligible limit ($30,000, 50% of annual income).",
+      "policy_reference": "POLICY-005",
+      "customer_summary": {
+        "requested_amount": 5000000.0,
+        "max_eligible": 30000.0
+      },
+      "required_policy": "POLICY-005"
+    },
+    "latency": 0.0
+  },
+  "756fe5df75bfb6809e8cee7a8c417096020d22e142669134f2b9c40b29266814": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Conflicting customer data: employment duration exceeds plausible age.",
+      "policy_reference": "POLICY-007",
+      "customer_summary": {
+        "age": 21.0,
+        "employment_years": 12.0
+      },
+      "required_policy": "POLICY-007"
+    },
+    "latency": 0.0
+  },
+  "507183d7e8b8a430d0d9df4bca4e3d4c7704f8136520c1fa983b44a299c61248": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 25000,
+      "reason": "Applicant meets all credit (760), income ($90,000), age (35), and employment policy standards.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 35,
+        "income": 90000,
+        "credit_score": 760
+      }
+    },
+    "latency": 0.0
+  },
+  "5587710c28ca14b6fa6c78b5b3e34105aba79870ea45f5a22ad3d3a8f46c49ba": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Requested loan type 'crypto_speculation' is not supported by policy.",
+      "policy_reference": "POLICY-008",
+      "customer_summary": {
+        "loan_type": "crypto_speculation"
+      },
+      "required_policy": "POLICY-008"
+    },
+    "latency": 0.0
+  },
+  "f716c126b990f5464dbf1d5aafdacb6de0455d77ba40ba9dba0b93394f7578cf": {
+    "response": {
+      "decision": "APPROVED",
+      "eligible_amount": 12000,
+      "reason": "Applicant meets all credit (651), income ($30,050), age (22), and employment policy standards.",
+      "required_policy": "POLICY-001",
+      "policy_reference": "POLICY-001",
+      "customer_summary": {
+        "age": 22,
+        "income": 30050,
+        "credit_score": 651
+      }
+    },
+    "latency": 0.0
+  },
+  "c1354f72a79496800fe3d36090aeec6a231e75505b256be8ab656222e33f2357": {
+    "response": {
+      "decision": "REJECTED",
+      "eligible_amount": 0,
+      "reason": "Debt-to-income ratio of 46.7% exceeds maximum allowed limit of 45.0%.",
+      "policy_reference": "POLICY-003",
+      "customer_summary": {
+        "dti_ratio": 0.4666
+      },
+      "required_policy": "POLICY-003"
+    },
+    "latency": 0.0
+  }
+}
